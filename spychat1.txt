@@ -1,4 +1,5 @@
 a=raw_input("Enter your name")
-b=raw_input("What should I call you?:MR. or MS.")
-a=b+" "+a
-print "Alright" +" "+ a +" "+ "I'd like to know a little bit more about ..."
+b=raw_input("What should I call you:Mr. or Ms.?")
+a=b+"."+" "+a+"."
+c= "Alright" +" "+ a +" "+"I'd like to know a little more about ..."
+print c
