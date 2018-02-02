@@ -1,5 +1,31 @@
-a=raw_input("Enter your name")
-b=raw_input("What should I call you:Mr. or Ms.?")
-a=b+"."+" "+a+"."
-c= "Alright" +" "+ a +" "+"I'd like to know a little more about ..."
-print c
+print("hello")
+print("let's get started")
+
+spy_name=raw_input("Enter your name")
+if len(spy_name)>3:
+    spy_salutation=raw_input("What should I call you:Mr. or Ms.?")
+    spy_name=spy_salutation+"."+" "+spy_name+"."
+    c= "Alright" +" "+ spy_name +" "+"I'd like to know a little more about ..."
+    print c
+
+    spy_online=False
+    spy_age=0
+    spy_age=input("what is your age?")
+    if spy_age>10 and spy_age<50:
+        print "u have a valid age"
+    else:
+        print "u dnt hv valid age"
+    spy_rating = 0.0
+    spy_rating = input("enter your rating")
+    if spy_rating > 5.0:
+        print ("excellnt spy")
+    elif spy_rating > 4.5 and spy_rating < 3.1:
+        print("good spy")
+    elif spy_rating < 3.0:
+        print("useless spy")
+    spy_online = True
+    print "Authentication complete.Welcome" + " " + spy_name + " " + "age:" + " " + str(
+        spy_age) + " " + "and rating of:" + str(spy_rating) + " " + "proud of u onboard."
+
+else:
+    print("enter a name of valid size")
